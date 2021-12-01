@@ -1,0 +1,12 @@
+{
+    "tests": [
+        {
+            "name": "compose_circualr_key_frames",
+            "score": 4,
+            "max_score": 4
+        }
+    ],
+    "leaderboard": [],
+    "execution_time": "0.00",
+    "score": 4
+}
