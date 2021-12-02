@@ -1,8 +1,6 @@
 # File produced by Open Asset Import Library (http://www.assimp.sf.net)
 # (assimp v3.0.1262)
 
-mtllib hookconvex_0.stl.obj.mtl
-
 # 36 vertex positions
 v  0.004337 0.01035 0.000462002
 v  0.004337 -0.010658 -0.03035
@@ -83,7 +81,7 @@ vn 0 1.77327e-07 -1
 
 # Mesh '<STL_BINARY>' with 12 faces
 g <STL_BINARY>
-usemtl DefaultMaterial
+
 f  1//1 2//2 3//3
 f  4//4 5//5 6//6
 f  7//7 8//8 9//9
@@ -96,4 +94,3 @@ f  25//25 26//26 27//27
 f  28//28 29//29 30//30
 f  31//31 32//32 33//33
 f  34//34 35//35 36//36
-

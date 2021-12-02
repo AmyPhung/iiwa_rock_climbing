@@ -20,7 +20,7 @@
           <mesh>
             <scale>1 1 1</scale>
             <!-- <drake:declare_convex/> -->
-            <uri>meshes/1_2.obj</uri>
+            <uri>meshes/obj/1.obj</uri>
           </mesh>
         </geometry>
       </collision>
@@ -28,7 +28,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>meshes/1_2.obj</uri>
+            <uri>meshes/obj/1.obj</uri>
           </mesh>
         </geometry>
       </visual>
@@ -56,7 +56,7 @@
           <mesh>
             <scale>1 1 1</scale>
             <!-- <drake:declare_convex/> -->
-            <uri>meshes/2_2.obj</uri>
+            <uri>meshes/obj/2.obj</uri>
           </mesh>
         </geometry>
       </collision>
@@ -64,7 +64,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>meshes/2_2.obj</uri>
+            <uri>meshes/obj/2.obj</uri>
           </mesh>
         </geometry>
       </visual>
