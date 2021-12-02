@@ -16,10 +16,10 @@
       </inertial>
       <collision name="collision">
         <geometry>
-          <!-- TODO: Modify this to use convex parts -->
+
           <mesh>
             <scale>1 1 1</scale>
-            <!-- <drake:declare_convex/> -->
+            <drake:declare_convex/>
             <uri>meshes/obj/1.obj</uri>
           </mesh>
         </geometry>
@@ -33,10 +33,7 @@
         </geometry>
       </visual>
     </link>
-    <joint name="joint_1" type="fixed">
-      <parent>bowl_link</parent>
-      <child>bowl_link_1</child>
-    </joint>
+
     <link name="bowl_link_1">
       <inertial>
         <mass>1.0</mass>
@@ -52,10 +49,10 @@
       </inertial>
       <collision name="collision">
         <geometry>
-          <!-- TODO: Modify this to use convex parts -->
+
           <mesh>
             <scale>1 1 1</scale>
-            <!-- <drake:declare_convex/> -->
+            <drake:declare_convex/>
             <uri>meshes/obj/2.obj</uri>
           </mesh>
         </geometry>
@@ -69,6 +66,381 @@
         </geometry>
       </visual>
     </link>
+
+    <link name="bowl_link_2">
+      <inertial>
+        <mass>1.0</mass>
+        <inertia> <!-- inertias are tricky to compute -->
+          <!-- http://gazebosim.org/tutorials?tut=inertia&cat=build_robot -->
+          <ixx>0.083</ixx>       <!-- for a box: ixx = 0.083 * mass * (y*y + z*z) -->
+          <ixy>0.0</ixy>         <!-- for a box: ixy = 0 -->
+          <ixz>0.0</ixz>         <!-- for a box: ixz = 0 -->
+          <iyy>0.083</iyy>       <!-- for a box: iyy = 0.083 * mass * (x*x + z*z) -->
+          <iyz>0.0</iyz>         <!-- for a box: iyz = 0 -->
+          <izz>0.083</izz>       <!-- for a box: izz = 0.083 * mass * (x*x + y*y) -->
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+
+          <mesh>
+            <scale>1 1 1</scale>
+            <drake:declare_convex/>
+            <uri>meshes/obj/3.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>meshes/obj/3.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+
+    <link name="bowl_link_3">
+      <inertial>
+        <mass>1.0</mass>
+        <inertia> <!-- inertias are tricky to compute -->
+          <!-- http://gazebosim.org/tutorials?tut=inertia&cat=build_robot -->
+          <ixx>0.083</ixx>       <!-- for a box: ixx = 0.083 * mass * (y*y + z*z) -->
+          <ixy>0.0</ixy>         <!-- for a box: ixy = 0 -->
+          <ixz>0.0</ixz>         <!-- for a box: ixz = 0 -->
+          <iyy>0.083</iyy>       <!-- for a box: iyy = 0.083 * mass * (x*x + z*z) -->
+          <iyz>0.0</iyz>         <!-- for a box: iyz = 0 -->
+          <izz>0.083</izz>       <!-- for a box: izz = 0.083 * mass * (x*x + y*y) -->
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+
+          <mesh>
+            <scale>1 1 1</scale>
+            <drake:declare_convex/>
+            <uri>meshes/obj/4.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>meshes/obj/4.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+
+    <link name="bowl_link_4">
+      <inertial>
+        <mass>1.0</mass>
+        <inertia> <!-- inertias are tricky to compute -->
+          <!-- http://gazebosim.org/tutorials?tut=inertia&cat=build_robot -->
+          <ixx>0.083</ixx>       <!-- for a box: ixx = 0.083 * mass * (y*y + z*z) -->
+          <ixy>0.0</ixy>         <!-- for a box: ixy = 0 -->
+          <ixz>0.0</ixz>         <!-- for a box: ixz = 0 -->
+          <iyy>0.083</iyy>       <!-- for a box: iyy = 0.083 * mass * (x*x + z*z) -->
+          <iyz>0.0</iyz>         <!-- for a box: iyz = 0 -->
+          <izz>0.083</izz>       <!-- for a box: izz = 0.083 * mass * (x*x + y*y) -->
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+
+          <mesh>
+            <scale>1 1 1</scale>
+            <drake:declare_convex/>
+            <uri>meshes/obj/5.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>meshes/obj/5.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+
+    <link name="bowl_link_5">
+      <inertial>
+        <mass>1.0</mass>
+        <inertia> <!-- inertias are tricky to compute -->
+          <!-- http://gazebosim.org/tutorials?tut=inertia&cat=build_robot -->
+          <ixx>0.083</ixx>       <!-- for a box: ixx = 0.083 * mass * (y*y + z*z) -->
+          <ixy>0.0</ixy>         <!-- for a box: ixy = 0 -->
+          <ixz>0.0</ixz>         <!-- for a box: ixz = 0 -->
+          <iyy>0.083</iyy>       <!-- for a box: iyy = 0.083 * mass * (x*x + z*z) -->
+          <iyz>0.0</iyz>         <!-- for a box: iyz = 0 -->
+          <izz>0.083</izz>       <!-- for a box: izz = 0.083 * mass * (x*x + y*y) -->
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+
+          <mesh>
+            <scale>1 1 1</scale>
+            <drake:declare_convex/>
+            <uri>meshes/obj/6.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>meshes/obj/6.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+
+    <link name="bowl_link_6">
+      <inertial>
+        <mass>1.0</mass>
+        <inertia> <!-- inertias are tricky to compute -->
+          <!-- http://gazebosim.org/tutorials?tut=inertia&cat=build_robot -->
+          <ixx>0.083</ixx>       <!-- for a box: ixx = 0.083 * mass * (y*y + z*z) -->
+          <ixy>0.0</ixy>         <!-- for a box: ixy = 0 -->
+          <ixz>0.0</ixz>         <!-- for a box: ixz = 0 -->
+          <iyy>0.083</iyy>       <!-- for a box: iyy = 0.083 * mass * (x*x + z*z) -->
+          <iyz>0.0</iyz>         <!-- for a box: iyz = 0 -->
+          <izz>0.083</izz>       <!-- for a box: izz = 0.083 * mass * (x*x + y*y) -->
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+
+          <mesh>
+            <scale>1 1 1</scale>
+            <drake:declare_convex/>
+            <uri>meshes/obj/7.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>meshes/obj/7.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+
+    <link name="bowl_link_7">
+      <inertial>
+        <mass>1.0</mass>
+        <inertia> <!-- inertias are tricky to compute -->
+          <!-- http://gazebosim.org/tutorials?tut=inertia&cat=build_robot -->
+          <ixx>0.083</ixx>       <!-- for a box: ixx = 0.083 * mass * (y*y + z*z) -->
+          <ixy>0.0</ixy>         <!-- for a box: ixy = 0 -->
+          <ixz>0.0</ixz>         <!-- for a box: ixz = 0 -->
+          <iyy>0.083</iyy>       <!-- for a box: iyy = 0.083 * mass * (x*x + z*z) -->
+          <iyz>0.0</iyz>         <!-- for a box: iyz = 0 -->
+          <izz>0.083</izz>       <!-- for a box: izz = 0.083 * mass * (x*x + y*y) -->
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+
+          <mesh>
+            <scale>1 1 1</scale>
+            <drake:declare_convex/>
+            <uri>meshes/obj/8.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>meshes/obj/8.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+
+    <link name="bowl_link_8">
+      <inertial>
+        <mass>1.0</mass>
+        <inertia> <!-- inertias are tricky to compute -->
+          <!-- http://gazebosim.org/tutorials?tut=inertia&cat=build_robot -->
+          <ixx>0.083</ixx>       <!-- for a box: ixx = 0.083 * mass * (y*y + z*z) -->
+          <ixy>0.0</ixy>         <!-- for a box: ixy = 0 -->
+          <ixz>0.0</ixz>         <!-- for a box: ixz = 0 -->
+          <iyy>0.083</iyy>       <!-- for a box: iyy = 0.083 * mass * (x*x + z*z) -->
+          <iyz>0.0</iyz>         <!-- for a box: iyz = 0 -->
+          <izz>0.083</izz>       <!-- for a box: izz = 0.083 * mass * (x*x + y*y) -->
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+
+          <mesh>
+            <scale>1 1 1</scale>
+            <drake:declare_convex/>
+            <uri>meshes/obj/9.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>meshes/obj/9.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+
+    <link name="bowl_link_9">
+      <inertial>
+        <mass>1.0</mass>
+        <inertia> <!-- inertias are tricky to compute -->
+          <!-- http://gazebosim.org/tutorials?tut=inertia&cat=build_robot -->
+          <ixx>0.083</ixx>       <!-- for a box: ixx = 0.083 * mass * (y*y + z*z) -->
+          <ixy>0.0</ixy>         <!-- for a box: ixy = 0 -->
+          <ixz>0.0</ixz>         <!-- for a box: ixz = 0 -->
+          <iyy>0.083</iyy>       <!-- for a box: iyy = 0.083 * mass * (x*x + z*z) -->
+          <iyz>0.0</iyz>         <!-- for a box: iyz = 0 -->
+          <izz>0.083</izz>       <!-- for a box: izz = 0.083 * mass * (x*x + y*y) -->
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+
+          <mesh>
+            <scale>1 1 1</scale>
+            <drake:declare_convex/>
+            <uri>meshes/obj/10.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>meshes/obj/10.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+
+    <link name="bowl_link_10">
+      <inertial>
+        <mass>1.0</mass>
+        <inertia> <!-- inertias are tricky to compute -->
+          <!-- http://gazebosim.org/tutorials?tut=inertia&cat=build_robot -->
+          <ixx>0.083</ixx>       <!-- for a box: ixx = 0.083 * mass * (y*y + z*z) -->
+          <ixy>0.0</ixy>         <!-- for a box: ixy = 0 -->
+          <ixz>0.0</ixz>         <!-- for a box: ixz = 0 -->
+          <iyy>0.083</iyy>       <!-- for a box: iyy = 0.083 * mass * (x*x + z*z) -->
+          <iyz>0.0</iyz>         <!-- for a box: iyz = 0 -->
+          <izz>0.083</izz>       <!-- for a box: izz = 0.083 * mass * (x*x + y*y) -->
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+
+          <mesh>
+            <scale>1 1 1</scale>
+            <drake:declare_convex/>
+            <uri>meshes/obj/11.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>meshes/obj/11.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+
+    <link name="bowl_link_11">
+      <inertial>
+        <mass>1.0</mass>
+        <inertia> <!-- inertias are tricky to compute -->
+          <!-- http://gazebosim.org/tutorials?tut=inertia&cat=build_robot -->
+          <ixx>0.083</ixx>       <!-- for a box: ixx = 0.083 * mass * (y*y + z*z) -->
+          <ixy>0.0</ixy>         <!-- for a box: ixy = 0 -->
+          <ixz>0.0</ixz>         <!-- for a box: ixz = 0 -->
+          <iyy>0.083</iyy>       <!-- for a box: iyy = 0.083 * mass * (x*x + z*z) -->
+          <iyz>0.0</iyz>         <!-- for a box: iyz = 0 -->
+          <izz>0.083</izz>       <!-- for a box: izz = 0.083 * mass * (x*x + y*y) -->
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+
+          <mesh>
+            <scale>1 1 1</scale>
+            <drake:declare_convex/>
+            <uri>meshes/obj/12.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>meshes/obj/12.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+
+    <joint name="joint_1" type="fixed">
+      <parent>bowl_link</parent>
+      <child>bowl_link_1</child>
+    </joint>
+    <joint name="joint_2" type="fixed">
+      <parent>bowl_link_1</parent>
+      <child>bowl_link_2</child>
+    </joint>
+    <joint name="joint_3" type="fixed">
+      <parent>bowl_link_2</parent>
+      <child>bowl_link_3</child>
+    </joint>
+    <joint name="joint_4" type="fixed">
+      <parent>bowl_link_3</parent>
+      <child>bowl_link_4</child>
+    </joint>
+    <joint name="joint_5" type="fixed">
+      <parent>bowl_link_4</parent>
+      <child>bowl_link_5</child>
+    </joint>
+    <joint name="joint_6" type="fixed">
+      <parent>bowl_link_5</parent>
+      <child>bowl_link_6</child>
+    </joint>
+    <joint name="joint_7" type="fixed">
+      <parent>bowl_link_6</parent>
+      <child>bowl_link_7</child>
+    </joint>
+    <joint name="joint_8" type="fixed">
+      <parent>bowl_link_7</parent>
+      <child>bowl_link_8</child>
+    </joint>
+    <joint name="joint_9" type="fixed">
+      <parent>bowl_link_8</parent>
+      <child>bowl_link_9</child>
+    </joint>
+    <joint name="joint_10" type="fixed">
+      <parent>bowl_link_9</parent>
+      <child>bowl_link_10</child>
+    </joint>
+    <joint name="joint_11" type="fixed">
+      <parent>bowl_link_10</parent>
+      <child>bowl_link_11</child>
+    </joint>
 
   </model>
 </sdf>
