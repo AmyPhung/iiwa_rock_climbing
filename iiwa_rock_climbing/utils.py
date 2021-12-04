@@ -28,6 +28,12 @@ def ComputeEulerFromQuat(q_vec):
     rpy = RollPitchYaw(q_quat)
     return rpy.vector()
 
+def ComputeQuatFromEuler(rpy_vec):
+    rpy_vec = np.array(rpy_vec)
+    rpy = RollPitchYaw(rpy_vec)
+    quat = rpy.ToQuaternion()
+    return np.array([quat.w(), quat.x(), quat.y(), quat.z()])
+
 def ComputeAngleComplement(r_vec):
     """Ensures all angles are less than 180 degrees"""
     r_vec = np.array(r_vec)
