@@ -1,0 +1,7 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="WGstart_frame">
+    <link name="WGstart">
+    </link>
+  </model>
+</sdf>
