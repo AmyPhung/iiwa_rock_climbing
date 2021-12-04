@@ -1,12 +1,13 @@
 {
     "tests": [
         {
-            "name": "compose_circualr_key_frames",
-            "score": 4,
-            "max_score": 4
+            "name": "Test compute_ctrl",
+            "score": 0.0,
+            "max_score": 4,
+            "output": "Test Failed: 0.6499997473062213 not less than or equal to 0.55 : Edge of the book is not between the gap. It is too far.\n"
         }
     ],
     "leaderboard": [],
     "execution_time": "0.00",
-    "score": 4
+    "score": 0.0
 }
