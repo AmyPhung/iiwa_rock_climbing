@@ -21,6 +21,8 @@ def CreatePoseFromVector(vec):
 
 def CreatePoseFromVectors(q_vec, p_vec):
     q_vec = np.array(q_vec)
+    norm = np.linalg.norm(q_vec)
+    q_vec = q_vec/norm
     p_vec = np.array(p_vec)
     q_quat = Quaternion(q_vec)
     rot = RotationMatrix(q_quat)
@@ -42,6 +44,8 @@ def CreateVectorFromPose(pose):
 
 def ComputeEulerFromQuat(q_vec):
     q_vec = np.array(q_vec)
+    norm = np.linalg.norm(q_vec)
+    q_vec = q_vec/norm
     q_quat = Quaternion(q_vec)
     rpy = RollPitchYaw(q_quat)
     return rpy.vector()
