@@ -15,12 +15,30 @@ from pydrake.geometry import (Cylinder, GeometryInstance,
 from pydrake.math import RigidTransform, RollPitchYaw, RotationMatrix
 from manipulation.utils import FindResource
 
-def CreatePoseFromVector(q_vec, p_vec):
+def CreatePoseFromVector(vec):
+    # Assume qw qx qy qz px py pz ordering
+    return CreatePoseFromVectors(vec[:4],vec[4:])
+
+def CreatePoseFromVectors(q_vec, p_vec):
     q_vec = np.array(q_vec)
     p_vec = np.array(p_vec)
     q_quat = Quaternion(q_vec)
     rot = RotationMatrix(q_quat)
     return RigidTransform(rot, p_vec)
+
+   
+def CreateVectorsFromPose(pose):
+    p = pose.translation()
+    p_vec = list(p)
+    q = pose.rotation().ToQuaternion()
+    q_vec = [q.w(), q.x(), q.y(), q.z()]
+    q_vec + p_vec
+    return np.array(q_vec), np.array(p_vec)
+
+def CreateVectorFromPose(pose):
+    q_vec, p_vec = CreateVectorsFromPose(pose)
+    return np.concatenate((q_vec, p_vec))
+
 
 def ComputeEulerFromQuat(q_vec):
     q_vec = np.array(q_vec)
