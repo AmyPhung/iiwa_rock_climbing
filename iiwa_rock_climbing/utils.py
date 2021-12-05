@@ -1,6 +1,10 @@
 import numpy as np
 import os
 
+from manipulation.meshcat_cpp_utils import (
+    StartMeshcat, AddMeshcatTriad
+)
+
 import pydrake.all
 
 from pydrake.all import (
@@ -92,6 +96,7 @@ def ComputeAngleBetweenQuaternionVectors(q1, q2):
 def VectorToQuaternion(q_vec):
     return Quaternion(q_vec/np.linalg.norm(q_vec))
 
+# Visualization functions
 def AddMeshcatSphere(meshcat,
                      path,
                      radius=0.01,
@@ -103,3 +108,29 @@ def AddMeshcatSphere(meshcat,
     meshcat.SetTransform(path, X_WP)
     meshcat.SetObject(path, Sphere(radius),
                       Rgba(1, 0, 0, opacity))
+    
+def visualize_frame(meshcat, name, X_WF, length=0.15, radius=0.006):
+    """
+    visualize imaginary frame that are not attached to existing bodies
+
+    Input: 
+        name: the name of the frame (str)
+        X_WF: a RigidTransform to from frame F to world.
+
+    Frames whose names already exist will be overwritten by the new frame
+    """
+    AddMeshcatTriad(meshcat, "climber/" + name,
+                    length=length, radius=radius, X_PT=X_WF)
+
+def visualize_point(meshcat, name, p_WP, radius=0.006):
+    """
+    visualize a point
+
+    Input: 
+        name: the name of the frame (str)
+        p_WP: a position from a point P to world.
+
+    Frames whose names already exist will be overwritten by the new frame
+    """
+    AddMeshcatSphere(meshcat, "climber/" + name,
+                     radius=radius, p_WP=p_WP)
