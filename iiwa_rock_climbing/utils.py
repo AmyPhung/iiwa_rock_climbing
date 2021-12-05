@@ -76,3 +76,18 @@ def ComputeAngleOffset(r_vec1, r_vec2):
     
     delta = ComputeAngleComplement(r_vec1 - r_vec2)
     return delta
+
+def ComputeAngleBetweenQuaternions(q1, q2):
+    #https://www.researchgate.net/post/How_do_I_calculate_the_smallest_angle_between_two_quaternions
+    #https://www.johndcook.com/blog/2012/02/15/dot-cross-and-quaternion-products/
+    q1q2 = q1.inverse() @ q2
+    q_vec = np.array([q1q2.x(), q1q2.y(), q1q2.z()]) # Vector part of quaternion
+    return 2*np.arcsin(np.linalg.norm(q_vec))
+
+def ComputeAngleBetweenQuaternionVectors(q1, q2):
+    q1 = Quaternion(q1/np.linalg.norm(q1))
+    q2 = Quaternion(q2/np.linalg.norm(q2))
+    return ComputeAngleBetweenQuaternions(q1, q2)
+
+def VectorToQuaternion(q_vec):
+    return Quaternion(q_vec/np.linalg.norm(q_vec))
