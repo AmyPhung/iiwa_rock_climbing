@@ -91,3 +91,15 @@ def ComputeAngleBetweenQuaternionVectors(q1, q2):
 
 def VectorToQuaternion(q_vec):
     return Quaternion(q_vec/np.linalg.norm(q_vec))
+
+def AddMeshcatSphere(meshcat,
+                     path,
+                     radius=0.01,
+                     opacity=1.,
+                     p_WP=np.array([0,0,0])):
+    
+    X_WP = RigidTransform(RotationMatrix(),
+                          p_WP)
+    meshcat.SetTransform(path, X_WP)
+    meshcat.SetObject(path, Sphere(radius),
+                      Rgba(1, 0, 0, opacity))
