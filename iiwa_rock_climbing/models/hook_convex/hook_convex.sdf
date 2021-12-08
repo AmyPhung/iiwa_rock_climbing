@@ -30,6 +30,9 @@
             <uri>meshes/obj/hookconvex_0.obj</uri>
           </mesh>
         </geometry>
+        <material>
+          <diffuse>0.33 0.33 0.33 1</diffuse>
+        </material>
       </visual>
     </link>
 
@@ -62,6 +65,9 @@
             <uri>meshes/obj/hookconvex_1.obj</uri>
           </mesh>
         </geometry>
+        <material>
+          <diffuse>0.33 0.33 0.33 1</diffuse>
+        </material>
       </visual>
     </link>
 
@@ -94,6 +100,9 @@
             <uri>meshes/obj/hookconvex_2.obj</uri>
           </mesh>
         </geometry>
+        <material>
+          <diffuse>0.33 0.33 0.33 1</diffuse>
+        </material>
       </visual>
     </link>
 
@@ -126,6 +135,9 @@
             <uri>meshes/obj/hookconvex_3.obj</uri>
           </mesh>
         </geometry>
+        <material>
+          <diffuse>0.33 0.33 0.33 1</diffuse>
+        </material>
       </visual>
     </link>
 

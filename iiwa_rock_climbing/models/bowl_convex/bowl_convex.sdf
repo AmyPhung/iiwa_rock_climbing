@@ -16,7 +16,6 @@
       </inertial>
       <collision name="collision">
         <geometry>
-
           <mesh>
             <scale>1 1 1</scale>
             <drake:declare_convex/>
@@ -31,6 +30,9 @@
             <uri>meshes/obj/1.obj</uri>
           </mesh>
         </geometry>
+        <material>
+          <diffuse>0.78 0.78 0.78 1</diffuse>
+        </material>
       </visual>
     </link>
 
@@ -64,6 +66,9 @@
             <uri>meshes/obj/2.obj</uri>
           </mesh>
         </geometry>
+        <material>
+          <diffuse>0.78 0.78 0.78 1</diffuse>
+        </material>
       </visual>
     </link>
 
@@ -97,6 +102,9 @@
             <uri>meshes/obj/3.obj</uri>
           </mesh>
         </geometry>
+        <material>
+          <diffuse>0.78 0.78 0.78 1</diffuse>
+        </material>
       </visual>
     </link>
 
@@ -130,6 +138,9 @@
             <uri>meshes/obj/4.obj</uri>
           </mesh>
         </geometry>
+        <material>
+          <diffuse>0.78 0.78 0.78 1</diffuse>
+        </material>
       </visual>
     </link>
 
@@ -163,6 +174,9 @@
             <uri>meshes/obj/5.obj</uri>
           </mesh>
         </geometry>
+        <material>
+          <diffuse>0.78 0.78 0.78 1</diffuse>
+        </material>
       </visual>
     </link>
 
@@ -196,6 +210,9 @@
             <uri>meshes/obj/6.obj</uri>
           </mesh>
         </geometry>
+        <material>
+          <diffuse>0.78 0.78 0.78 1</diffuse>
+        </material>
       </visual>
     </link>
 
@@ -229,6 +246,9 @@
             <uri>meshes/obj/7.obj</uri>
           </mesh>
         </geometry>
+        <material>
+          <diffuse>0.78 0.78 0.78 1</diffuse>
+        </material>
       </visual>
     </link>
 
@@ -262,6 +282,9 @@
             <uri>meshes/obj/8.obj</uri>
           </mesh>
         </geometry>
+        <material>
+          <diffuse>0.78 0.78 0.78 1</diffuse>
+        </material>
       </visual>
     </link>
 
@@ -295,6 +318,9 @@
             <uri>meshes/obj/9.obj</uri>
           </mesh>
         </geometry>
+        <material>
+          <diffuse>0.78 0.78 0.78 1</diffuse>
+        </material>
       </visual>
     </link>
 
@@ -328,6 +354,9 @@
             <uri>meshes/obj/10.obj</uri>
           </mesh>
         </geometry>
+        <material>
+          <diffuse>0.78 0.78 0.78 1</diffuse>
+        </material>
       </visual>
     </link>
 
@@ -361,6 +390,9 @@
             <uri>meshes/obj/11.obj</uri>
           </mesh>
         </geometry>
+        <material>
+          <diffuse>0.78 0.78 0.78 1</diffuse>
+        </material>
       </visual>
     </link>
 
@@ -394,6 +426,9 @@
             <uri>meshes/obj/12.obj</uri>
           </mesh>
         </geometry>
+        <material>
+          <diffuse>0.78 0.78 0.78 1</diffuse>
+        </material>
       </visual>
     </link>
 
